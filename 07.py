@@ -1,0 +1,22 @@
+type=int(input("輸入月租費型式:"))
+time=int(input("輸入通話時間:"))
+if(type==186):
+    if(time*0.09<=2*type):
+        print(round(time*0.09*0.9))
+    else:
+        print(round(time*0.09*0.8))  
+elif(type==386):
+    if(time*0.08<=2*type):
+        print(round(time*0.08*0.8))
+    else:
+        print(round(time*0.08*0.7))   
+elif(type==586):
+    if(time*0.07<=2*type):
+        print(round(time*0.07*0.7))
+    else:
+        print(round(time*0.07*0.6))    
+elif(type==986):
+    if(time*0.06<=2*type):
+        print(round(time*0.06*0.6))
+    else:
+        print(round(time*0.06*0.5))
